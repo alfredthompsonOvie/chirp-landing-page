@@ -5,26 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>chirp landing page</title>
-		<!-- font awesome -->
-		<link
-			rel="stylesheet"
-			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-			crossorigin="anonymous"
-		/>
 		<!-- google fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="styles.css" />
-		<script src="js/gsap.min.js" defer></script>
-		<script src="js/ScrollTrigger.min.js" defer></script>
-		<script src="app.js" defer></script>
+		<script src="js/gsap.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="app.js" async></script>
 	</head>
 	<body>
 		<div class="container">
@@ -34,31 +20,37 @@
 						<div class="site-logo">
 							<a href="/" class="logo"> Chirp. </a>
 						</div>
-
-						<ul class="nav-bar">
-							<li><a href="/">Home</a></li>
-							<li><a href="#pricing">Pricing</a></li>
-							<li><a href="/faq">FAQ</a></li>
+						<ul class="nav-bar is-hidden">
+							<li><a href="/" class="nav-links">Home</a></li>
+							<li>
+								<a href="#pricing" class="nav-links">Pricing</a>
+							</li>
+							<li class="nav-list"><a href="/faq" class="nav-links">FAQ</a></li>
 							<li>
 								<a href="/sign-up" class="cta">
-									<span
+									<span class="imgSpan"
 										><img src="assets/Twitter.svg" alt=""
 									/></span>
 									<span>Sign in with Twitter</span>
 								</a>
 							</li>
 						</ul>
-
 						<div class="hamburgerMenu">
-							<!-- <img src="assets/Hamburger Menu.svg" alt="" /> -->
-							<i class="fa fa-bars"></i>
-							<i class="fa fa-times is-hidden"></i>
+							<img
+								src="assets/Hamburger Menu.svg"
+								alt=""
+								class="fa fa-bars"
+							/>
+							<img
+								src="assets/cancel(1).png"
+								alt=""
+								class="fa fa-times is-hidden"
+							/>
 						</div>
 					</div>
 				</nav>
-				<!--  -->
+				<div class="overlay is-hidden"></div>
 			</header>
-			<!--  -->
 			<main>
 				<section class="main-section">
 					<div class="section-analytics section-padding">
@@ -115,7 +107,6 @@
 						</div>
 					</div>
 				</section>
-				<!-- section 2 -->
 				<section class="features animation">
 					<div class="features-inner section-padding animate">
 						<h1 class="features-title title">
@@ -132,8 +123,6 @@
 									ready to engage with your content.
 								</p>
 							</div>
-							<!--  -->
-
 							<div class="features-card animeCard-two">
 								<p class="card-icon">🤓</p>
 								<h2>Smart Analyzer</h2>
@@ -144,8 +133,6 @@
 									you're missing out on an opportunity.
 								</p>
 							</div>
-							<!--  -->
-
 							<div class="features-card animeCard-three">
 								<p class="card-icon">🗞</p>
 								<h2>Scheduled Your Tweets</h2>
@@ -156,8 +143,6 @@
 									is most likely to read.
 								</p>
 							</div>
-							<!--  -->
-
 							<div class="features-card animeCard-four">
 								<p class="card-icon">☀</p>
 								<h2>Dark Mode</h2>
@@ -168,7 +153,6 @@
 									times.
 								</p>
 							</div>
-							<!--  -->
 						</div>
 					</div>
 				</section>
@@ -211,7 +195,6 @@
 										</div>
 									</div>
 								</div>
-								<!--  -->
 								<div class="testimonial-card profile-card-two">
 									<div class="profile">
 										<div class="profile-content">
@@ -246,7 +229,6 @@
 										</div>
 									</div>
 								</div>
-								<!--  -->
 								<div
 									class="testimonial-card profile-card-three"
 								>
@@ -281,13 +263,10 @@
 										</div>
 									</div>
 								</div>
-
-								<!--  -->
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- next section -->
 				<div class="pricing animation" id="pricing">
 					<div class="pricing-inner section-padding animate">
 						<div class="pricing-heading">
@@ -341,7 +320,7 @@
 					<p class="logo">Chirp.</p>
 					<ul class="footer-nav">
 						<li>
-							<a href="#">
+							<a href="#" >
 								<img src="assets/Twitter (Black).svg" alt="" />
 							</a>
 						</li>
@@ -351,8 +330,5 @@
 				</div>
 			</footer>
 		</div>
-		<!-- <script src="js/gsap.min.js"></script>
-		<script src="js/ScrollTrigger.min.js"></script>
-		<script src="app.js"></script> -->
 	</body>
 </html>
