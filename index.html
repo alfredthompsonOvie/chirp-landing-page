@@ -12,9 +12,16 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
 			rel="stylesheet"
 		/>
-
+		<style>
+			.js {
+				visibility: hidden;
+			}
+		</style>
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="styles.css" />
+		<script>
+			document.getElementsByTagName('html')[0].classList.add('js');
+		</script>
 		<script src="js/gsap.min.js"></script>
 		<script src="js/ScrollTrigger.min.js"></script>
 		<script src="app.js" async></script>
@@ -339,5 +346,10 @@
 				</div>
 			</footer>
 		</div>
+		<script>
+			window.onload = function () {
+				document.querySelector('html').classList.remove('js');
+			}
+		</script>
 	</body>
 </html>
